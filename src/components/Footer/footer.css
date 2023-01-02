@@ -1,0 +1,11 @@
+.footer-cont{
+  height: 15rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.copyrights a{
+  color: aqua;
+}

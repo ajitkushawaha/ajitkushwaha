@@ -1,0 +1,34 @@
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav{
+ display: flex;
+ background: #000000f7;
+ align-items: center;
+ justify-content: space-between;
+ padding: 1rem;
+}
+.nav__items{
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+.nav__items:hover{
+    color: #065a74;
+}
+.bars{
+    display: none;
+}
+
+@media (max-width: 600px){
+   .hide{
+    display: none;
+   }
+   .bars{
+    display:inline-block;
+   }
+}
+
