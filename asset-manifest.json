@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ajitkushwaha/static/css/main.5d5a9d88.css",
+    "main.js": "/ajitkushwaha/static/js/main.0ac03171.js",
+    "static/media/bg4.jpg": "/ajitkushwaha/static/media/bg4.212e243d969c591a271f.jpg",
+    "index.html": "/ajitkushwaha/index.html",
+    "main.5d5a9d88.css.map": "/ajitkushwaha/static/css/main.5d5a9d88.css.map",
+    "main.0ac03171.js.map": "/ajitkushwaha/static/js/main.0ac03171.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d5a9d88.css",
+    "static/js/main.0ac03171.js"
+  ]
+}
