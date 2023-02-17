@@ -70,5 +70,96 @@
   .project__title{
     font-size: 1.4rem;
   }
+  .Arrow{
+    font-size: 2rem;
+  }
+ 
 }
 
+.slider{
+  position:sticky;
+  top: 10%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 900;
+}
+.sliderWrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+}
+.sliderWrapper img{ 
+  width: 70vw;
+  height: 75vh;
+}
+.sliderWrapper-content{ 
+  position: relative;
+}
+
+.sliderWrapper a{
+   position: absolute;
+   bottom: 10%;
+   left:40%;
+   background: rgba(0, 128, 128, 0.4);
+   color: white;
+   padding: .3rem 1.5rem;
+   text-decoration:none;
+   border-radius: .3rem;
+}
+.sliderWrapper a:hover{
+   background: white;
+   color: teal;
+   font-weight: 600;
+
+}
+.close{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.5rem;
+  color: lightgray;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 900;
+}
+.Arrowrl{
+  margin: 20px;
+  font-size: 40px;
+  color: lightgray;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.Arrow:hover{
+  background: rgba(255, 255, 255, 0.3);
+}
+.close:hover{
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+@media (max-width:600px){
+     
+  .sliderWrapper img{ 
+    width: 100%;
+    height: 100%;
+  }
+  .Arrowrl{
+    font-size: 100px;
+    
+  }
+  .sliderWrapper a{
+    padding: 0 1rem;
+    font-size: .8rem;
+   
+ }
+   
+}

@@ -34,6 +34,9 @@ text-transform:capitalize;
 .iconeName{
     font-size: 1.5rem;
 }
+.title p{
+    padding: 0 2rem;
+}
 
 @media (max-width:600px) {
     .skill__cont{

@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import SocialIcon from "../SocialIcon/SocialIcon";
 
 import "./footer.css";
 
@@ -22,17 +23,17 @@ const Footer = () => {
               <BsInstagram className="icon" />
             </a>
           </div>
-          <div class="copyrights">
-            <a href="#" class="footer-link">
+          <div className="copyrights">
+            <a href="/" className="footer-link">
               &copy;
             </a>
-            <a href="#" class="footer-link">
+            <a href="/" className="footer-link">
               Privacy |
             </a>
-            <a href="#" class="footer-link">
+            <a href="/" className="footer-link">
               Tearms |
-            </a>
-            <a href="#" class="footer-link">
+            </a> 
+            <a href="/" className="footer-link">
               FAQ
             </a>
           </div>

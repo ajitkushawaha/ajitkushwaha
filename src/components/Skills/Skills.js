@@ -1,56 +1,40 @@
-import React from 'react'
-import {FcApproval, FcElectronics} from "react-icons/fc";
-import './skills.css'
+import React from "react";
+import { FcElectronics } from "react-icons/fc";
+import "./skills.css";
+import { skills } from "../../Data";
 
 const Skills = () => {
+  const columns = skills.reduce((acc, skill, index) => {
+    const columnIndex = index % 2;
+    acc[columnIndex] = [...(acc[columnIndex] || []), skill];
+    return acc;
+  }, []);
+
   return (
     <section id="skill-section">
-        <div className="title">
-        <FcElectronics className=" skill_icon"/>
+      <div className="title">
+        <FcElectronics className=" skill_icon" />
         <h3>Skills & Technology</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolorem id, saepe provident in itaque quaerat suscipit ad debitis blanditiis?</p>
-        </div>
-      <div className="skill__cont">
-        <div className="skill__list">
-          <div className="skill__items">
-            <FcApproval className='iconeName'/>
-            <span>HTML</span>
-          </div>
-          <div className="skill__items">
-            <FcApproval className='iconeName'/>
-            <span>Css</span>
-          </div>
-          <div className="skill__items">
-            <FcApproval className='iconeName'/>
-            <span>JavaScript</span>
-          </div>
-          <div className="skill__items">
-            <FcApproval className='iconeName'/> 
-            <span>Java</span>
-          </div>
-        </div>
-        <div className="skill__list">
-          <div className="skill__items">
-            <FcApproval className='iconeName'/>
-            <span>ReactJs</span>
-          </div>
-          <div className="skill__items">
-            <FcApproval className='iconeName'/>
-            <span>NodeJs</span>
-          </div>
-          <div className="skill__items">
-            <FcApproval className='iconeName'/>   
-            <span>MongoDb</span>
-          </div>
-          <div className="skill__items">
-            <FcApproval className='iconeName' /> 
-            <span>Vs code</span>
-          </div>
-        </div>
+        <p>
+          I have been studying web development since 2021 and i develop some
+          short project . Through i primarily use HTML CSS JAVASCRIPT AND REACT JS. I have worked
+          both in frontend and back-end fetish mostly in frontend .
+        </p>
       </div>
-      
+      <div className="skill__cont">
+        {columns.map((column, index) => (
+          <div className="skill__list" key={index}>
+            {column.map((skill, index) => (
+              <div className="skill__items" key={index}>
+                {skill.icon}
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

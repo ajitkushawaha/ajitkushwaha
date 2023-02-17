@@ -9,17 +9,22 @@ import {
 } from "react-icons/fa";
 import { DiJava } from "react-icons/di";
 import { TbBrandJavascript } from "react-icons/tb";
+import img from "../About/profile-img1.jpg";
 
-const About = () => {
+
+
+const About = () => { 
   
   const [showMore, setShowMore] = useState(false);
   const [buttonText, setButtonText] = useState('Reed More'); 
   const [arrow, setArrow] = useState(<BsArrowDownShort/>); 
   const [dot, setDot] = useState('. . .'); 
+  const [direction, setDirection] = useState('row');
 
    const toggleButton =() =>{
     setShowMore(!showMore);
     setButtonText(showMore ? 'Read more' : 'Read less');
+    setDirection(direction === 'row' ? 'column' : 'row');
     setArrow(showMore ? <BsArrowDownShort/> : <BsArrowUpShort/>);
     setDot(showMore ? '. . .' : '');
    }
@@ -33,24 +38,13 @@ const About = () => {
           <div className="left__side">
             <div className="about__social">
               <img
-                alt="gallery"
+                alt="Gallary"
                 className="profileImg"
-                src="/image/profile-img.jpeg"
+                src={img}
               />
             </div>
-            <div className="social__icons">
-              <a href="https://www.linkedin.com/in/ajju-kushwaha77/">
-                <BsLinkedin className="icon" />
-              </a>
-              <a href="https://twitter.com/AjitKus40102887">
-              <BsTwitter className="icon" />
-              </a>
-              <a href="https://www.facebook.com/ajit.kushwaha.90834">
-              <BsFacebook className="icon" />
-              </a>
-              <a href="https://www.instagram.com/ajju_kushwaha77/">
-              <BsInstagram className="icon" />
-              </a>
+            <div className="name">
+              <h2>Ajit Kushwaha</h2>
             </div>
           </div>
           <div className="right__side">
@@ -78,7 +72,7 @@ const About = () => {
               { showMore && <div className="hide__seemore">
                 <li>
                   <span>(:🏆🏅:)</span>
-                  <p>
+                  <p className="myinfo">
                     My primary focus and inspiration for my studies is Web
                     Development. In my free time, I do coding and prectice. I am
                     both driven and self_motivated, and I am constantly
@@ -86,7 +80,7 @@ const About = () => {
                     about Front End Development.
                   </p>
                 </li>
-                <li>
+                <li className="techAndtool">
                   <p className="about__heading">🖥️Technical Skills:-</p>
                   <i>Language:</i> Basic Java <DiJava />, JavaScript
                   <TbBrandJavascript />. <br />

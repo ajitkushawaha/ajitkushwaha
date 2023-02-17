@@ -1,0 +1,17 @@
+.Hire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hire-button{
+    border: none;
+    background: none;
+    color: white;
+}
+.hire-button:hover{
+    color: teal;
+}
+.hirearrow{
+    font-size: 1.5rem;
+
+}

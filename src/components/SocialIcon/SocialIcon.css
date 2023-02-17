@@ -1,0 +1,21 @@
+.SociaIcon .SociaIcon-icons{
+    background:rgba(255,255,255,0.9);
+    width: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #333;
+    border-radius: .2rem;
+    gap:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.SociaIcon{
+    position: fixed;
+    top: 60%;
+    left: 2%;
+    width: 2rem;
+}

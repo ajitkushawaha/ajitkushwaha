@@ -9,3 +9,11 @@
 .copyrights a{
   color: aqua;
 }
+.social__icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social__icons .icon {
+  font-size: 1.5rem;
+}
